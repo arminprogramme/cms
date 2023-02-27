@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: #fff!important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #051937, #0e296a, #3b349c, #7733c8, #bd12eb);
+}
+
+#error-todo {
+    color: red;
+    display: none;
+}
+
+.menu {
+    background-color: #00000044;
+    padding: 0.5rem 0;
+}
+
+.sidepanel {
+    height: 100%;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #0e296a;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+
+/* The sidepanel links */
+
+.sidepanel a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #eaeaea;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style the button that is used to open the sidepanel */
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0.5rem 1rem;
+    color: white;
+    background: transparent;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #ffffff1d;
+    transition: 0.3s;
+}
+
+#search-input {
+    padding: 0.5rem;
+    background-color: #f1f1f14b;
+    border: 0;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#search-input::placeholder {
+    color: #fff;
+}
+
+.part-2 button {
+    margin: 1.2rem 0.5rem;
+}
+
+
+/*body*-/*/
+
+.card-price .card {
+    color: #ffff;
+    background-color: #ffffff43;
+    font-weight: bold!important;
+}
+
+.progress {
+    background-color: #ffffff1b;
+    width: 100%;
+    height: 3px;
+}
+
+.progress-bar {
+    background-color: #fff;
+    width: 70%;
+}
+
+.card-chart {
+    background-color: #ffffff1b;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #fff!important;
+}
+
+canvas {
+    color: #fff!important;
+}
+
+.chart-option1 {
+    border: 5px;
+    padding: 1rem 0;
+    border: 3px solid#ffffff77;
+}
+
+.rows-data {
+    border-top: 1px solid #fff;
+}
+
+.todo-list {
+    background-color: #05193744;
+    padding: 1rem;
+}
+
+.todo-list input {
+    background-color: #ffffff22;
+    padding: .5rem;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+
+.todo-list input::placeholder {
+    color: #fff;
+}
+
+.todo-item {
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    background-color: #0e2a6a64;
+}
+
+.fa-trash:hover {
+    color: red;
+    transition: 0.3s;
+    transform: scale(1.05);
+    font-size: 1rem;
+}
+
+.todo-item h6 {
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}

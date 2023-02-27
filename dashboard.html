@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="alert/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <section class="menu">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="user.html">Users</a>
+            <a href="info.html">Information</a>
+            <a href="course.html">Courses</a>
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="d-flex justify-content-between w-100">
+            <div class="part-1 w-50 d-flex align-items-center">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <input type="search" name="" id="search-input" placeholder="Search...">
+            </div>
+            <div class="part-2">
+                <div class="dropdown d-flex align-items-center">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <a class="btn btn-outline-light mx-3 " type="button">
+                        <i class="fa fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="body py-4">
+        <div class="container">
+
+
+
+            <div class="card-price">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title justify-content-between d-flex">
+                                    <h4>9526</h4>
+                                    <i class="fa fa-shopping-cart"></i>
+                                </div>
+                                <div class="progress my-3">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="card-title d-flex justify-content-between">
+                                    <h6>Total Orders</h6>
+                                    <h6>+4.2%</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title justify-content-between d-flex">
+                                    <h4>8596</h4>
+                                    <i class="fa fa-usd"></i>
+                                </div>
+                                <div class="progress my-3">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="card-title d-flex justify-content-between">
+                                    <h6>Total Revenue</h6>
+                                    <h6>+1.2%</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title justify-content-between d-flex">
+                                    <h4>2596</h4>
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <div class="progress my-3">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="card-title d-flex justify-content-between">
+                                    <h6>Visitors</h6>
+                                    <h6>+5.7%</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title justify-content-between d-flex">
+                                    <h4>2596</h4>
+                                    <i class="fa fa-envira"></i>
+                                </div>
+                                <div class="progress my-3">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <div class="card-title d-flex justify-content-between">
+                                    <h6>Messages</h6>
+                                    <h6>+5.4%</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="chart-dashboard py-5">
+                <div class="row">
+                    <div class="col-xl-8 py-3">
+                        <div class="card-chart">
+                            <div class="card-body">
+
+
+                                <div class="card-title d-flex justify-content-between align-items-center">
+                                    <h6>Site Traffic</h6>
+                                    <div class="dropdown">
+                                        <a class="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-gears"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <div class="card-body main-chart">
+                                    <canvas id="myChart1"></canvas>
+                                </div>
+
+                                <div class="card-footer d-flex justify-content-between py-4 text-center ">
+                                    <div class="chart-option1 text-center col-lg-4">
+                                        <h5 class="fs-blod">45.84M</h5>
+                                        <p>Overall Visitor 2.43%</p>
+                                    </div>
+                                    <div class="chart-option1 text-center col-lg-4">
+                                        <h5 class="fs-blod">45.84M</h5>
+                                        <p>Overall Visitor 2.43%</p>
+                                    </div>
+                                    <div class="chart-option1 text-center col-lg-4">
+                                        <h5 class="fs-blod">45.84M</h5>
+                                        <p>Overall Visitor 2.43%</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 py-3">
+                        <div class="card-chart">
+                            <div class="card-body">
+
+
+
+                                <div class="card-title  d-flex justify-content-between align-items-center">
+                                    <h6>Weekly Sales</h6>
+                                    <div class="dropdown">
+                                        <a class="btn text-light  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-gears"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="card-body main-chart">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+
+
+                                <div class="chart-option2 pt-4">
+                                    <div class="d-flex justify-content-between rows-data">
+                                        <p>Direct</p>
+                                        <p>$5856</p>
+                                        <p>+55%</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between rows-data">
+                                        <p>Direct</p>
+                                        <p>$5856</p>
+                                        <p>+55%</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between rows-data">
+                                        <p>Direct</p>
+                                        <p>$5856</p>
+                                        <p>+55%</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between rows-data">
+                                        <p>Direct</p>
+                                        <p>$5856</p>
+                                        <p>+55%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="todo-list my-3  ">
+                <div class="todo-title w-100">
+                    <input type="search" placeholder='Add Your Todo' id="input-todo">
+                    <span id="error-todo">Your Name todo should less than 12 Ch</span>
+                </div>
+                <div class="todo-dives w-100 d-flex justify-content-between align-items-center">
+                    <div class="todo-dives w-100 container py-3">
+                        <div class="row all-todo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="alert/sweetalert2.min.js"></script>
+    <script src="alert/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

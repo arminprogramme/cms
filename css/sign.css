@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: #fff!important;
+    background-image: linear-gradient(to right, #000028 25%, #00092871), url('../img/carrie-borden-fUhcTOCGI0o-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.error {
+    color: #ffff00;
+}
+
+.navbar {
+    background: transparent!important;
+}
+
+.body {
+    width: 40%;
+    margin-top: 4em;
+}
+
+h6,
+p {
+    color: #cecece;
+}
+
+input {
+    color: #fff!important;
+    outline: 0!important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-radius: 0!important;
+    border-right: 0 !important;
+    border-bottom: 3px solid #fff!important;
+    background-color: transparent!important;
+}
+
+::placeholder {
+    color: #a8a8a8!important;
+}
+
+.btn {
+    background-color: #3c5aff!important;
+    padding: 1em 2em!important;
+    font-weight: bold;
+    border-radius: 50px!important;
+    color: #fff!important;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#showHide {
+    color: #fff!important;
+    cursor: pointer;
+}
+
+#email-error,
+#name-error,
+#last-error,
+#pass-error {
+    display: none;
+}
+
+.btn:hover {
+    background-color: #ffffff!important;
+    color: #3c5aff!important;
+}
+
+@media screen and (max-width: 992px) {
+    .body {
+        width: 100%;
+        text-align: center;
+    }
+}
